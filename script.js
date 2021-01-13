@@ -1,7 +1,6 @@
 
-$('.effect').on('inview', function() {
-	 var $item = $(this);
-	 $item.addClass('start');
+$(document).ready(function() {
+	
 });
 
 
@@ -49,23 +48,6 @@ $(function(){
 		  $('.om').hide();
 		  $('.bg_bl').fadeIn();
 		  scrollpos = $(window).scrollTop();
-      $('body').addClass('fixed').css({'top': -scrollpos});
-	        $(".menu_btn").addClass('opened');
-	  ttt = true;
-	} else {
-		bnrBtn.fadeOut();
-		  bnrBtn2.fadeOut();
-          menuOpen = false;
-		  $('.om').show();
-		  $('.bg_bl').fadeOut();
-		  $('body').removeClass('fixed').css({'top': 0});
-		  $(".menu_btn").removeClass('opened');
-      window.scrollTo( 0 , scrollpos );
-	  ttt = false;
-	}
-        });
-});
-
 	 
 $(window).resize(function(){
     var w = $(window).width();
